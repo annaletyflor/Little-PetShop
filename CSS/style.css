@@ -1,159 +1,238 @@
 body {
-    margin: 0;
-  }
+  margin: 0;
+  background-color: #FFFBF8;
+}
+
+/* Barra de pesquisa do site */
+
+.mainnav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pesquisa {
+  margin-left: 1em;
+  margin-right: 1em; /* Adicionado margem direita */
+}
+
+.barraPesquisa {
+  height: 20px;
+  width: 326px;
+  border-radius: 20px;
+  padding-left: 1em;
+  border: none;
+  color: #9165ef;
+  text-align: center;
+}
+
+.barraPesquisa::placeholder {
+  color: #9165ef;
+}
+
+.search-bar {
+  margin: 0 auto;
+  width: 100%;
+  height: 15px;
+  padding: 0 20px;
+  font-size: 1rem;
+  border: 3px solid #ced0ce;
+  outline: none;
+}
+
+:-webkit-input-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+
+:-moz-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+
+:-ms-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+
+
+/* Cabeçalho do site */
+
+.masthead li {
+  list-style: none;
+  float: left;
+  padding-left: 6em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.masthead li a {
+  text-decoration: none;
+  color: white;
+  gap: 1px;
+  align-self: flex-start;
+}
+
+.masthead li a:hover {
+  color: #9165ef;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.logo {
+  margin-left: 10px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: #533E85;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+/* Rodapé do site */
+
+.social {
+  background-color: #74f1ae;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  align-items: center;
+}
+
+.retorno {
+  margin-left: -3.5em;
+}
+
+.dev {
+  background-color: #9165ef;
+  padding: 1em;
+}
+
+.itemRodape {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.itemRodape i {
+  color: #9165ef;
+}
+
+.dev p {
+  text-align: center;
+  margin: 0;
+}
+
+/* Parte principal do "Sobre Nós" */
+
+   .sobreNos1{
+    color: black;
+    margin: 12%;
+    
+   }
+
+   /* DIVISÃO DO SOBRE NÓS , PRA CIMA RESTO PRA BAIXO TITULO */
   
-  /* Barra de pesquisa do site */
-  
-  .mainnav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .pesquisa {
-    margin-left: 1em;
-  }
-  
-  .barraPesquisa {
-    height: 20px;
-    width: 326px;
-    border-radius: 20px;
-    padding-left: 1em;
-    border: none;
+   .titulonos {
     color: #9165ef;
-    text-align: center;
-  }
-  
-  .barraPesquisa::placeholder {
-    color: #9165ef;
-  }
-  
-  .search-bar {
-    margin: 0 auto;
-    width: 100%;
-    height: 15px;
-    padding: 0 20px;
-    font-size: 1rem;
-    border: 3px solid #ced0ce;
-    outline: none;
-  }
-  
-  :-webkit-input-placeholder {
-    transition: opacity 0.45s ease;
-    opacity: 0;
-  }
-  
-  :-moz-placeholder {
-    transition: opacity 0.45s ease;
-    opacity: 0;
-  }
-  
-  :-ms-placeholder {
-    transition: opacity 0.45s ease;
-    opacity: 0;
-  }
-  
-  /* Cabeçalho do site */
-  
-  .masthead li {
-    list-style: none;
-    float: left;
-    padding-left: 6em;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    font-weight: bold;
+   }
+
+
+main.sobrenos {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 3em;
+  text-align: center;
+   ;
+}
+/* BANNER IMAGEM */
+.banner{
+     margin: 0%;
     display: flex;
-    align-items: center;
+    border: 3px solid #488FB1;
+    justify-self: center;
   }
   
-  .masthead li a {
-    text-decoration: none;
-    color: white;
-    gap: 1px;
-    align-self: flex-start;
-  }
-  
-  .masthead li a:hover {
-    color: #9165ef;
-  }
-  
-  .container {
-    display: flex;
-    align-items: center;
-    gap: 2em;
-  }
-  
-  .logo {
-    margin-left: 10px;
-  }
-  
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 80px;
-    background: #74f1ae;
-    font-family: 'Open Sans', sans-serif;
-    display: flex;
-    align-items: center;
-    z-index: 2;
-  }
-  
-  /* Rodapé do site */
-  
-  .social {
-    background-color: #74f1ae;
-    display: flex;
-    justify-content: center;
-    gap: 2em;
-    align-items: center;
-  }
-  
-  .retorno {
-    margin-left: -3.5em;
-  }
-  
-  .dev {
-    background-color: #9165ef;
-    padding: 1em;
-  }
-  
-  .itemRodape {
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
-  }
-  
-  .itemRodape i {
-    color: #9165ef;
-  }
-  
-  .dev p {
-    text-align: center;
-    margin: 0;
-  }
-  
-  /* Parte principal do "Sobre Nós" */
-  
-  main.sobrenos {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2em;
-    margin-top: 3em;
-    text-align: center;
-  }
-  
-  .banhosTosa,
-  .vacinacao {
-    float: left;
-  }
-  
-  .brinquedosAlimentos,
-  .atendimento {
-    float: right;
-  }
-  
+
+/* SOBRE NOS E INFORMAÇÕES */
+
+.alinharSobreNos {
+  display: flex;
+  align-items: center;
+}
+
+.alinharSobreNos div:first-child {
+  width: 57%;
+  display: flex;
+  justify-content: right;
+}
+.alinharSobreNos div img{
+  border-radius: 50%;
+  height: 300px;
+  max-width: 300px;
+  object-fit: cover;
+}
+
+.alinharSobreNos div:last-child {
+  width: 35%;
+  padding-left: 20px;
+  text-align: justify;
+}
+
+.alinharSobreNos div p:first-child{
+  text-align: center;
+}
+
+.alinharSobreNos div p:last-child{
+  text-align: justify;
+}
+
+
+.reversoSobreNos {
+  display: flex;
+  align-items: center;
+}
+
+.reversoSobreNos div:last-child {
+  width: 50%;
+  display: flex;
+  justify-content: left;
+}
+.reversoSobreNos div img{
+  border-radius: 50%;
+  height: 300px;
+  max-width: 300px;
+  object-fit: cover;
+}
+
+.reversoSobreNos div:first-child {
+  width: 41%;
+  margin-right: 20px;
+  padding-left: 20px;
+  text-align: justify;
+}
+.reversoSobreNos div p:first-child{
+  text-align: center;
+}
+.reversoSobreNos div p:last-child{
+  text-align: justify;
+}
+
