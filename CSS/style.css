@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #FFFBF8;
+  background-color: #F9FBFF;
 }
 
 /* Barra de pesquisa do site */
@@ -17,13 +17,15 @@ body {
 }
 
 .barraPesquisa {
-  height: 20px;
-  width: 326px;
+  height: 30px;
+  width: 35em;
   border-radius: 20px;
   padding-left: 1em;
   border: none;
   color: #9165ef;
   text-align: center;
+  margin: 0px;
+  
 }
 
 .barraPesquisa::placeholder {
@@ -96,7 +98,7 @@ header {
   left: 0;
   right: 0;
   height: 80px;
-  background: #533E85;
+  background: #090580;
   font-family: "Open Sans", sans-serif;
   display: flex;
   align-items: center;
@@ -106,11 +108,19 @@ header {
 /* Rodapé do site */
 
 .social {
-  background-color: #74f1ae;
+  background-color: #87CBB9;
   display: flex;
   justify-content: center;
   gap: 2em;
   align-items: center;
+}
+
+.dev {
+  color: #F9FBFF;
+}
+
+.social {
+  color: #F9FBFF;
 }
 
 .retorno {
@@ -118,7 +128,7 @@ header {
 }
 
 .dev {
-  background-color: #9165ef;
+  background-color: #090580;
   padding: 1em;
 }
 
@@ -129,7 +139,7 @@ header {
 }
 
 .itemRodape i {
-  color: #9165ef;
+  color: aqua;
 }
 
 .dev p {
@@ -148,8 +158,14 @@ header {
    /* DIVISÃO DO SOBRE NÓS , PRA CIMA RESTO PRA BAIXO TITULO */
   
    .titulonos {
-    color: #9165ef;
-   }
+    color: #F0FFF0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #488FB1;
+    border: 2px solid #F0FFF0;
+    border-radius: 8px;
+    padding: 5px; /* Ajuste o valor de padding conforme necessário */
+  }
+  
 
 
 main.sobrenos {
