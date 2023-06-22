@@ -1,6 +1,6 @@
-body {
+  body {
   margin: 0;
-  background-color: #F9FBFF;
+  background-color: rgb(253, 253, 253);
 }
 
 /* Barra de pesquisa do site */
@@ -9,6 +9,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap:center;
 }
 
 .pesquisa {
@@ -56,26 +57,43 @@ body {
   transition: opacity 0.45s ease;
   opacity: 0;
 }
+.search-button {
+  height: 25px;
+  width: 85px;
+  background-color: #87cbb9;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
 
-
+.search-button i {
+  color: #9165ef;
+  font-size: 18px;
+  padding: 10px;
+}
 /* Cabeçalho do site */
+
+.logo-img {
+  height: 85px;
+}
+
+.masthead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .masthead li {
   list-style: none;
-  float: left;
-  padding-left: 6em;
+  padding: 0 1em;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
   font-weight: bold;
-  display: flex;
-  align-items: center;
 }
 
 .masthead li a {
   text-decoration: none;
   color: white;
-  gap: 1px;
-  align-self: flex-start;
 }
 
 .masthead li a:hover {
@@ -88,9 +106,8 @@ body {
   gap: 2em;
 }
 
-.logo {
-  margin-left: 10px;
-}
+
+
 
 header {
   position: fixed;
@@ -105,10 +122,19 @@ header {
   z-index: 2;
 }
 
+/* BANNER IMAGEM */
+.banner {
+  margin: 0%;
+  display: flex;
+  border: 3px solid #488fb1;
+  justify-self: center;
+  align-self: center;
+}
+
 /* Rodapé do site */
 
 .social {
-  background-color: #87CBB9;
+  background-color: #87cbb9;
   display: flex;
   justify-content: center;
   gap: 2em;
@@ -116,11 +142,11 @@ header {
 }
 
 .dev {
-  color: #F9FBFF;
+  color: #f9fbff;
 }
 
 .social {
-  color: #F9FBFF;
+  color: #f9fbff;
 }
 
 .retorno {
@@ -149,24 +175,21 @@ header {
 
 /* Parte principal do "Sobre Nós" */
 
-   .sobreNos1{
-    color: black;
-    margin: 12%;
-    
-   }
+.sobreNos1 {
+  color: black;
+  margin: 12%;
+}
 
-   /* DIVISÃO DO SOBRE NÓS , PRA CIMA RESTO PRA BAIXO TITULO */
-  
-   .titulonos {
-    color: #F0FFF0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: #488FB1;
-    border: 2px solid #F0FFF0;
-    border-radius: 8px;
-    padding: 5px; /* Ajuste o valor de padding conforme necessário */
-  }
-  
+/* DIVISÃO DO SOBRE NÓS , PRA CIMA RESTO PRA BAIXO TITULO */
 
+.titulonos {
+  color: #f0fff0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #488fb1;
+  border: 2px solid #f0fff0;
+  border-radius: 8px;
+  padding: 5px; /* Ajuste o valor de padding conforme necessário */
+}
 
 main.sobrenos {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -176,17 +199,9 @@ main.sobrenos {
   justify-content: center;
   gap: 2em;
   margin-top: 3em;
-  text-align: center;
-   ;
+ text-align: center;
 }
-/* BANNER IMAGEM */
-.banner{
-     margin: 0%;
-    display: flex;
-    border: 3px solid #488FB1;
-    justify-self: center;
-  }
-  
+
 
 /* SOBRE NOS E INFORMAÇÕES */
 
@@ -200,7 +215,7 @@ main.sobrenos {
   display: flex;
   justify-content: right;
 }
-.alinharSobreNos div img{
+.alinharSobreNos div img {
   border-radius: 50%;
   height: 300px;
   max-width: 300px;
@@ -213,14 +228,13 @@ main.sobrenos {
   text-align: justify;
 }
 
-.alinharSobreNos div p:first-child{
+.alinharSobreNos div p:first-child {
   text-align: center;
 }
 
-.alinharSobreNos div p:last-child{
+.alinharSobreNos div p:last-child {
   text-align: justify;
 }
-
 
 .reversoSobreNos {
   display: flex;
@@ -232,7 +246,7 @@ main.sobrenos {
   display: flex;
   justify-content: left;
 }
-.reversoSobreNos div img{
+.reversoSobreNos div img {
   border-radius: 50%;
   height: 300px;
   max-width: 300px;
@@ -245,10 +259,222 @@ main.sobrenos {
   padding-left: 20px;
   text-align: justify;
 }
-.reversoSobreNos div p:first-child{
+.reversoSobreNos div p:first-child {
   text-align: center;
 }
-.reversoSobreNos div p:last-child{
+.reversoSobreNos div p:last-child {
   text-align: justify;
+}
+/*LOCALIZAÇÃOOOOOOOOOOO*/
+
+.localizacao {
+  background-color: #090580;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 80px;
+}
+
+.localizacao-title {
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-size: 18px;
+  padding: 10px;
+}
+
+/* LOJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
+
+.ltitle {
+  color: #090580;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-radius: 8px;
+  text-align: center;
+  padding: px; /* Ajuste o valor de padding conforme necessário */
+}
+/* coloca todas as css perante a img da loja */
+.imgLoja{
+  border-radius: 50%;
+  height: 300px;
+  max-width: 300px;
+}
+
+/* PAGINA INICIALLLLLLLLL */
+
+.textprodutosRecomendado {
+  background-color: #090580; 
+  padding: 10px; 
+  border-radius: 10px; 
+  font-size: 18px; 
+  padding: 1px 100px;
+  margin: 80px;
+  
+}
+
+
+.produtosRecomendados-title {
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+
+.produtosRecomendado {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.produtosRecomendado img {
+  display: inline-block;
+  width: 200px;
+  margin-right: 20px;
+  border: 2px solid #090580;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Adiciona transição suave */
+}
+
+.produtosRecomendado img:hover {
+  transform: scale(1.1);
+  filter: brightness(110%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Aumenta a intensidade da sombra no hover */
+}
+
+/* MARCAR VENDIDAS*/
+
+.tituloMarcas {
+  background-color: #090580; 
+  padding: 10px; 
+  border-radius: 10px; 
+  font-size: 18px; 
+  padding: 1px 100px;
+  margin: 80px;
+  
+}
+
+.tituloMarcas-title {
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+.containerMarcas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.marcaImagem {
+  width: 250px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.marcaImagem {
+  transition: transform 0.3s ease;
+}
+
+.marcaImagem:hover {
+  transform: scale(1.1);
+}
+
+/* EU ODEIO PROGRAMAÇÃO*/
+.lojaprod {
+  background-color: #adecdb; 
+  padding: 10px; 
+  border-radius: 10px; 
+  font-size: 18px; 
+  padding: 1px 100px;
+  margin: 80px;
+  
+}
+
+/*lojaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+
+.lojaprod-title {
+  color: #87cbb9;
+  text-align: center;
+  margin: 1;
+}
+
+
+.lojaprod {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.lojaprod img {
+  display: inline-block;
+  width: 200px;
+  margin-right: 20px;
+  border: 2px solid #87cbb9;
+  border-radius: 5px;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, filter 0.3s ease;
+  margin-bottom: 20px; /* Adiciona espaçamento entre as imagens */
+}
+
+.lojaprod img:hover {
+  transform: scale(2.1);
+  filter: brightness(110%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/*LOGIN/FORMULARIO PARA O PET SHOP*/
+
+h1{
+  color:blueviolet;
+}
+
+.form-master{
+  width: fit-content;
+  color: rgb(24, 7, 91);
+  text-align: center;
+  text-transform: uppercase;
+  background-color: lightblue;
+  border-radius: 10px;  
+  box-shadow: 10px 10px 0 #090580;
+  padding: 3em;
+  margin: 0px auto;
+}
+.form-master h2{
+  color: rgb(24, 7, 91);
+  text-align: center;
+  margin-bottom:  0;
+}
+.form-master p{
+  text-align: center;
+  margin-top: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small
+}
+.form-master input,
+.form-master textarea{
+  border-radius: 10px;
+  padding: 6px 16px;
+  margin-bottom: 20px;
+  background: transparent;
+  border: 1px solid #090580;
+}
+.form-btn{
+  display: flex;
+  justify-content: center;
+}    
+.form-btn input{
+  background-color: #090580;
+  color: white;
+  border: none;
+  border-bottom: 10;
+  height: 2.5em;
+  width: 8em;
+}
+.form-btn input:invalid{
+  animation: shake 0,2s 2;
+  border: 1px solid rgb(24, 7, 91)
+}
+@keyframes shake{
+  25%{translate: 6px 0}
+  50%{translate: 6px 0}
+  75%{translate: 6px 0}
 }
 
