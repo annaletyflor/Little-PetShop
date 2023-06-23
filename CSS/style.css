@@ -1,4 +1,4 @@
-  body {
+body {
   margin: 0;
   background-color: rgb(253, 253, 253);
 }
@@ -9,12 +9,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap:center;
+  flex-wrap: center;
 }
 
 .pesquisa {
   margin-left: 1em;
   margin-right: 1em; /* Adicionado margem direita */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pesquisa div:first-child > a {
+  margin-left: -30px;
+}
+
+.pesquisa div:last-child > a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #fff;
+  padding: 0 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .barraPesquisa {
@@ -26,7 +43,6 @@
   color: #9165ef;
   text-align: center;
   margin: 0px;
-  
 }
 
 .barraPesquisa::placeholder {
@@ -106,9 +122,6 @@
   gap: 2em;
 }
 
-
-
-
 header {
   position: fixed;
   top: 0;
@@ -119,11 +132,12 @@ header {
   font-family: "Open Sans", sans-serif;
   display: flex;
   align-items: center;
+  justify-content: center;
   z-index: 2;
 }
 
 /* BANNER IMAGEM */
-.banner {
+.sobreNos1 img {
   margin: 0%;
   display: flex;
   border: 3px solid #488fb1;
@@ -165,7 +179,7 @@ header {
 }
 
 .itemRodape i {
-  color: aqua;
+  color: #090580;
 }
 
 .dev p {
@@ -178,6 +192,16 @@ header {
 .sobreNos1 {
   color: black;
   margin: 12%;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.sobreNos1 p,
+.titulonos {
+  width: 70%;
+  margin: auto;
+  text-align: justify;
 }
 
 /* DIVISÃO DO SOBRE NÓS , PRA CIMA RESTO PRA BAIXO TITULO */
@@ -189,6 +213,8 @@ header {
   border: 2px solid #f0fff0;
   border-radius: 8px;
   padding: 5px; /* Ajuste o valor de padding conforme necessário */
+  margin-top: 20px;
+  text-align: center;
 }
 
 main.sobrenos {
@@ -198,10 +224,8 @@ main.sobrenos {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2em;
-  margin-top: 3em;
- text-align: center;
+  text-align: center;
 }
-
 
 /* SOBRE NOS E INFORMAÇÕES */
 
@@ -270,8 +294,8 @@ main.sobrenos {
 .localizacao {
   background-color: #090580;
   padding: 10px;
-  border-radius: 10px;
-  margin: 80px;
+  border-radius: 10px 10px 0px 0px;
+  margin-top: 20px;
 }
 
 .localizacao-title {
@@ -292,7 +316,7 @@ main.sobrenos {
   padding: px; /* Ajuste o valor de padding conforme necessário */
 }
 /* coloca todas as css perante a img da loja */
-.imgLoja{
+.imgLoja {
   border-radius: 50%;
   height: 300px;
   max-width: 300px;
@@ -301,22 +325,19 @@ main.sobrenos {
 /* PAGINA INICIALLLLLLLLL */
 
 .textprodutosRecomendado {
-  background-color: #090580; 
-  padding: 10px; 
-  border-radius: 10px; 
-  font-size: 18px; 
+  background-color: #090580;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
   padding: 1px 100px;
   margin: 80px;
-  
 }
-
 
 .produtosRecomendados-title {
   color: white;
   text-align: center;
   margin: 0;
 }
-
 
 .produtosRecomendado {
   margin-top: 20px;
@@ -342,13 +363,12 @@ main.sobrenos {
 /* MARCAR VENDIDAS*/
 
 .tituloMarcas {
-  background-color: #090580; 
-  padding: 10px; 
-  border-radius: 10px; 
-  font-size: 18px; 
+  background-color: #090580;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
   padding: 1px 100px;
   margin: 80px;
-  
 }
 
 .tituloMarcas-title {
@@ -357,7 +377,8 @@ main.sobrenos {
   margin: 0;
 }
 
-.containerMarcas {
+.containerMarcas,
+.containerMarcas div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -380,13 +401,12 @@ main.sobrenos {
 
 /* EU ODEIO PROGRAMAÇÃO*/
 .lojaprod {
-  background-color: #adecdb; 
-  padding: 10px; 
-  border-radius: 10px; 
-  font-size: 18px; 
+  background-color: #adecdb;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
   padding: 1px 100px;
   margin: 80px;
-  
 }
 
 /*lojaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
@@ -396,7 +416,6 @@ main.sobrenos {
   text-align: center;
   margin: 1;
 }
-
 
 .lojaprod {
   margin-top: 20px;
@@ -422,45 +441,47 @@ main.sobrenos {
 
 /*LOGIN/FORMULARIO PARA O PET SHOP*/
 
-h1{
-  color:blueviolet;
+h1 {
+  color: blueviolet;
 }
 
-.form-master{
+.form-master {
   width: fit-content;
   color: rgb(24, 7, 91);
   text-align: center;
   text-transform: uppercase;
   background-color: lightblue;
-  border-radius: 10px;  
+  border-radius: 10px;
   box-shadow: 10px 10px 0 #090580;
   padding: 3em;
   margin: 0px auto;
+  margin-top: 200px;
+  margin-bottom: 150px;
 }
-.form-master h2{
+.form-master h2 {
   color: rgb(24, 7, 91);
   text-align: center;
-  margin-bottom:  0;
+  margin-bottom: 0;
 }
-.form-master p{
+.form-master p {
   text-align: center;
   margin-top: 5px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: small
+  font-size: small;
 }
 .form-master input,
-.form-master textarea{
+.form-master textarea {
   border-radius: 10px;
   padding: 6px 16px;
   margin-bottom: 20px;
   background: transparent;
   border: 1px solid #090580;
 }
-.form-btn{
+.form-btn {
   display: flex;
   justify-content: center;
-}    
-.form-btn input{
+}
+.form-btn input {
   background-color: #090580;
   color: white;
   border: none;
@@ -468,13 +489,18 @@ h1{
   height: 2.5em;
   width: 8em;
 }
-.form-btn input:invalid{
-  animation: shake 0,2s 2;
-  border: 1px solid rgb(24, 7, 91)
+.form-btn input:invalid {
+  animation: shake 0, 2s 2;
+  border: 1px solid rgb(24, 7, 91);
 }
-@keyframes shake{
-  25%{translate: 6px 0}
-  50%{translate: 6px 0}
-  75%{translate: 6px 0}
+@keyframes shake {
+  25% {
+    translate: 6px 0;
+  }
+  50% {
+    translate: 6px 0;
+  }
+  75% {
+    translate: 6px 0;
+  }
 }
-
